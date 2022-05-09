@@ -1,4 +1,4 @@
- /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -7,10 +7,9 @@ package paqueteuno;
 
 /**
  *
- * @author reroes
+ * @author User
  */
-public class Ejecutor {
-
+public class Ejecutor2 {
     public static void main(String[] args) {
         // se crea un de tipo UnidadDVD
         String marca = "Toshiba";
@@ -20,6 +19,10 @@ public class Ejecutor {
         String procesador = "Intel";
         
         Computadora computadora = new Computadora(procesador, unidad);
+        
+        String varible_marca = computadora.obtenerTipoProcesador();
+        UnidadDVD varible_unidad = computadora.obtenerUnidadDvd();
+        
         System.out.printf("Computadora:\nProcesador: %s\n"
                 + "Unidad de DVD: %s\n",
                 computadora.obtenerTipoProcesador(),
@@ -34,5 +37,4 @@ public class Ejecutor {
                 computadora.obtenerUnidadDvd().obtenerMarca());
          
     }
-
 }
